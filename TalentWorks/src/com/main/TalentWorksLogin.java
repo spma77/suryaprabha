@@ -25,7 +25,7 @@ public class TalentWorksLogin {
 		}
 
 		WebElement userName = driver.findElement(By.xpath(".//*[@id='Email']"));
-		userName.sendKeys("suryaprabha.v@gmail.com");
+		userName.sendKeys("test@gmail.com");
 		driver.findElement(By.id("next")).click();
 		
 		//This is to get handle to the password window
@@ -35,7 +35,7 @@ public class TalentWorksLogin {
 		}
 
 		WebElement passWord = driver.findElement(By.xpath(".//*[@id='Passwd']"));
-		passWord.sendKeys("Wlifc11252");
+		passWord.sendKeys("lskjgksjg");
 
 		WebElement signIn = driver.findElement(By.xpath(".//*[@id='signIn']"));
 		signIn.click();
