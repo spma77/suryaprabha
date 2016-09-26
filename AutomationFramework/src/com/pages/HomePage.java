@@ -1,6 +1,7 @@
 package com.pages;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -42,10 +43,9 @@ public String clickLogin()
 	
 	url = driver.getCurrentUrl();
 	driver.getWindowHandles();
-	
+	//Implicit Wait
+	driver.getWebDriver().manage().timeouts().implicitlyWait(10000, TimeUnit.MILLISECONDS);
 	return url;
-	
-	
 }
 @AfterClass
 public void quit()

@@ -94,6 +94,10 @@ public class PageDriver {
 		{
 			driver.quit();
 		}
+		
+		public WebDriver getWebDriver() {
+			return driver;
+		}
 	}
 
 

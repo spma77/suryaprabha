@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.test.LoginPageTest">
+      <class name="com.test.ResourceSelectorTest">
         <methods>
-          <include name="initialize"/>
-          <include name="testInvalidLogin" invocation-numbers="0 1"/>
+          <include name="testPresentationSelection"/>
           <include name="setup"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.test.LoginPageTest -->
+      </class> <!-- com.test.ResourceSelectorTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
