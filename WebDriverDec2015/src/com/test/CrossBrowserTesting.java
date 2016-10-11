@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+
 public class CrossBrowserTesting {
 	static void CrossBrowserTestingEX() {
 		WebDriver driver = new FirefoxDriver();
@@ -20,8 +21,13 @@ public class CrossBrowserTesting {
 		
 		//chrome
 		
-		//System.setProperty("webDriver chrome.driver", )//path of the chrome driver.exe
+		//System.setProperty("webDriver chrome.driver", "chromedriver.exe");//path of the chrome driver.exe
+		//WebDriver driver = new ChromeDriver();
+		
+		//System.setProperty("webDriver.ie.driver","IEDriverServer.exe" );//path of the ie driver.exe
 		//driver = new ChromeDriver();
+		
+		
 	}
 	public static void main (String[]args){
 		CrossBrowserTesting.CrossBrowserTestingEX();

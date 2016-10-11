@@ -15,6 +15,7 @@ public class ActionAPI {
 		WebElement element = driver.findElement(By.cssSelector(".dropdown-toggle"));
 		Actions actions = new Actions(driver);
 		actions.moveToElement(element).build().perform();
+		driver.findElement(By.xpath(".//*[@id='navbar-collapse']/ul/li[4]/ul/li[2]/a")).click();
 		
 		
 	}
