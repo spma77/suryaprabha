@@ -16,7 +16,7 @@ public class PageDriver {
 		
 		public PageDriver(Configuration config){
 			this.configuration = config;
-			initializeBrowser();
+			//initializeBrowser();
 			
 			//this.driver = new FirefoxDriver();
 			//driver.get("configuration.URL");

@@ -3,17 +3,12 @@
 <suite name="Failed suite [AutoFrameTestSuite]">
   <test name="FunctTest(failed)">
     <classes>
-      <class name="com.test.HomePageTest">
-        <methods>
-          <include name="initialize"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.test.HomePageTest -->
       <class name="com.test.LoginPageTest">
         <methods>
+          <include name="testLogin"/>
           <include name="initialize"/>
-          <include name="testInvalidLogin" invocation-numbers="0 1"/>
           <include name="setup"/>
+          <include name="beforeClass"/>
         </methods>
       </class> <!-- com.test.LoginPageTest -->
     </classes>

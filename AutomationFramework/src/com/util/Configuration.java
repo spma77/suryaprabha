@@ -19,7 +19,7 @@ public class Configuration {
 	{
 		Properties p = new Properties();
 		try {
-			FileReader reader = new FileReader("config.properties");
+			FileReader reader = new FileReader("src//resources//config.properties");
 			
 			p.load(reader);
 			

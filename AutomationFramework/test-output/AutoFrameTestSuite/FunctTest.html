@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>FunctTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>6/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Sep 25 22:26:03 PDT 2016</td>
+<td>Started on:</td><td>Wed Oct 26 21:08:51 PDT 2016</td>
 </tr>
-<tr><td>Total time:</td><td>60 seconds (60188 ms)</td>
+<tr><td>Total time:</td><td>9 seconds (9969 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,43 +67,68 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.test.HomePageTest.TestLoginClick()'><b>TestLoginClick</b><br>Test class: com.test.HomePageTest</td>
-<td></td>
-<td>1</td>
-<td>com.test.HomePageTest@66d2e7d9</td></tr>
-<tr>
-<td title='com.test.HomePageTest.testCountSocialIcons()'><b>testCountSocialIcons</b><br>Test class: com.test.HomePageTest</td>
-<td></td>
+<td title='com.test.LoginPageTest.testLogin()'><b>testLogin</b><br>Test class: com.test.LoginPageTest</td>
+<td><div><pre>java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.util.ExcelUtil.getData(ExcelUtil.java:20)
+	at com.test.LoginPageTest.getUsers(LoginPageTest.java:45)
+	... 20 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 28 more
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1898155970", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1898155970'><pre>java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:162)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
+	at com.util.ExcelUtil.getData(ExcelUtil.java:20)
+	at com.test.LoginPageTest.getUsers(LoginPageTest.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:136)
+	... 20 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 28 more
+</pre></div></td>
 <td>0</td>
-<td>com.test.HomePageTest@66d2e7d9</td></tr>
-<tr>
-<td title='com.test.DemoSelectorTest.testDemoClickWithExplicitWait()'><b>testDemoClickWithExplicitWait</b><br>Test class: com.test.DemoSelectorTest</td>
-<td></td>
-<td>6</td>
-<td>com.test.DemoSelectorTest@4de8b406</td></tr>
-<tr>
-<td title='com.test.LoginPageTest.testInvalidLogin()'><b>testInvalidLogin</b><br>Test class: com.test.LoginPageTest<br>Parameters: surya, kjjnijn</td>
-<td></td>
-<td>5</td>
-<td>com.test.LoginPageTest@1efbd816</td></tr>
-<tr>
-<td title='com.test.LoginPageTest.testInvalidLogin()'><b>testInvalidLogin</b><br>Test class: com.test.LoginPageTest<br>Parameters: surya, kjjnijn</td>
-<td></td>
-<td>4</td>
-<td>com.test.LoginPageTest@1efbd816</td></tr>
-<tr>
-<td title='com.test.ResourceSelectorTest.testPresentationSelection()'><b>testPresentationSelection</b><br>Test class: com.test.ResourceSelectorTest</td>
-<td></td>
-<td>4</td>
-<td>com.test.ResourceSelectorTest@6a2bcfcb</td></tr>
+<td>com.test.LoginPageTest@4de8b406</td></tr>
 </table><p>
 </body>
 </html>

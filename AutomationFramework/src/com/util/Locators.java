@@ -12,7 +12,7 @@ public class Locators {
    {
 	   Properties p = new Properties();
 		try {
-			FileReader reader = new FileReader("locators.properties");
+			FileReader reader = new FileReader("src//resources//locators.properties");
 			p.load(reader);
 			Enumeration e = p.propertyNames();
 			while(e.hasMoreElements()){

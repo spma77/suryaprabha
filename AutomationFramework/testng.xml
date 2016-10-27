@@ -2,10 +2,7 @@
 <suite name = "AutoFrameTestSuite">
 <test name = "FunctTest">
 <classes>
-<class name = "com.test.HomePageTest"/>
 <class name = "com.test.LoginPageTest"/>
-<class name = "com.test.ResourceSelectorTest"/>
-<class name = "com.test.DemoSelectorTest"/>
 </classes>
 </test>
 </suite>
